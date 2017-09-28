@@ -1,5 +1,26 @@
-.Bleu { background-color:rgb(37,116,169); }
+.Bleu {
+background-color:rgb(37,116,169);
+padding-left:20px; }
 
-.Violet { background-color:rgb(154,18,179); }
+.Tb {
+background-color:rgb(37,116,169);
+margin-left:20px;
+width:6%; }
 
-.Rouge { background-color:rgb(219,10,91); } 
+.Violet {
+background-color:rgb(154,18,179);
+padding-left:20px; }
+
+.Tv {
+background-color:rgb(154,18,179);
+margin-left:20px;
+width:9%; }
+
+.Rose {
+background-color:rgb(219,10,91);
+padding-left:20px; }
+
+.Tr {
+background-color:rgb(219,10,91);
+margin-left:20px;
+width:11.5%; }

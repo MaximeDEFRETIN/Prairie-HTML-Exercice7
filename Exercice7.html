@@ -1,71 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-	<link rel="stylesheet" href="Exercice7.css" />
-	<title>Exercice 7</title>
-  </head>
-  <body>
-    <div class="Bleu">
-    <p>Votre identité</p>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Nom"></label>1.Nom</label> : <input type="text" name="Nom" id="Nom" placeholder="Nom" />
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Prénom"></label>2.Prénom</label> : <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" />
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Adresse mail"></label>3.Adresse mail</label> : <input type="text" name="Adresse mail" id="Adresse mail" placeholder="Adresse mail" />
-		</p>
-    </form>
-    </div>
-    <div class="Violet">
-    <p>Addresse de livraison</p>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Addresse"></label>1.Addresse</label> : <input type="email" name="Addresse" id="Addresse"/>
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Code Postal"></label>2.Code Postal</label> : <input type="text" name="Code Postal" id="Code Postal" placeholder="Code Postal" />
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Ville"></label>3.Ville</label> : <input type="text" name="Ville" id="Ville" placeholder="Ville" />
-		</p>
-    </form>
-    </div>
-    <div class="Rouge">
-    <p>Informations de réglement</p>
-    <form methode="post" action="traitment.php">
-		<p>
-			1.Types de carte bancaire :<br />
-			<label type="checkbox" name="Visa" id="Visa" /><label for="Visa">Visa</label><br />
-			<label type="checkbox" name="Mastercard" id="Mastercard" /><label for="Mastercard">Mastercard</label>
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Numéro de la carte"></label>2.Numéro de la carte</label> : <input type="text" name="Numéro de la carte" id="Numéro de la carte" placeholder="Numéro de la carte" />
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Code de sécurité"></label>3.Code de sécurité</label> : <input type="password" name="Code de sécurité" id="Code de sécurité" placeholder="Code de sécurité" />
-		</p>
-    </form>
-    <form methode="post" action="traitment.php">
-		<p>
-			<label for="Nom du titulaire"></label>4.Nom du titulaire</label> : <input type="text" name="Nom du titulaire" id="Nom du titulaire" placeholder="Nom du titulaire" />
-		</p>
-    </form>
-    </div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="EXERCICE7.css" />
+  <title>Exercice 7</title>
+</head>
+<body>
+  <legend class="Tb">Votre identité</legend>
+  <fieldset class="Bleu">
+      <form method="post">
+        <label for="Nom">1.Nom : </label><input type="text" name="Nom" id="Nom" placeholder="Nom" /><br />
+        <label for="Prenom">2.Prénom : </label><input type="text" name="Prenom" id="Nom" placeholder="Prénom" /><br />
+        <label for="Mail">3.Adresse mail : </label><input type="email" name="Mail" id="Mail" placeholder="Mail" />
+      </form>
+  </fieldset>
+  <legend class="Tv">Adresse de livraison</legend>
+  <fieldset class="Violet">
+      <form method="post">
+        <label for="Adresse">1.Adresse : </label><textarea name="Adresse" id="Adresse" cols="30" rows="5"></textarea><br />
+        <label for="Code postal">2.Code postal : </label><input type="text" name="Code postal" id="Code postal" placeholder="Code postal" /><br />
+        <label for="Ville">3.Ville : </label><input type="text" name="Ville" id="Ville" placeholder="Ville" />
+      </form>
+  </fieldset>
+  <legend class="Tr">Information de réglement</legend>
+  <fieldset class="Rose">
+      <form method="post">
+        <p>1.Type de carte :<br />
+        <input type="checkbox" name="Vista" id="Vista" /> <label for="Vista">Vista</label><br />
+        <input type="checkbox" name="Mastercard" id="Mastercard" /> <label for="Mastercard">Mastercard</label>
+        </p>
+        <label for="Numero">2.Numéro de la carte : </label><input type="text" name="Numero" id="Numero" placeholder="Numéro de la carte" /><br />
+        <label for="Code">3.Code de sécurité : </label><input type="password" name="Code" id="Code" placeholder="Code de sécurité" /><br />
+        <label for="Titulaire">4.Nom du titulaire : </label><input type="text" name="Titulaire" id="Titulaire" placeholder="Nom du titulaire" />
+      </form>
+  </fieldset>
+</body>
 </html>
